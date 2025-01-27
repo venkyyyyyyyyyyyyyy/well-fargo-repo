@@ -19,7 +19,8 @@ jobs:
       - name: Set up Java
         uses: actions/setup-java@v3
         with:
-          java-version: '17' # Adjust Java version if needed
+          java-version: '17'
+          distribution: 'adoptopenjdk'  # Adjust Java version if needed
 
       - name: Cache Maven dependencies
         uses: actions/cache@v3
